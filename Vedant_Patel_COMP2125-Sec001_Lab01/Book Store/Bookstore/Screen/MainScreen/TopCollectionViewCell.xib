@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topCell" id="gTV-IL-0wX" customClass="TopCollectionViewCell" customModule="Bookstore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-vY-dFI">
+                        <rect key="frame" x="0.5" y="-4" width="265" height="143"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="Pq6-0I-3eJ">
+                                <rect key="frame" x="0.0" y="0.0" width="265" height="143"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-H4-WNS">
+                                <rect key="frame" x="40" y="104" width="186" height="30"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XFU-8V-f4z"/>
+                                    <constraint firstAttribute="width" constant="185" id="teY-n4-GWz"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Books">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="31"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pq6-0I-3eJ" firstAttribute="leading" secondItem="0WC-vY-dFI" secondAttribute="leading" id="0kc-c8-mDK"/>
+                            <constraint firstAttribute="trailing" secondItem="Pq6-0I-3eJ" secondAttribute="trailing" id="1l2-eD-Vc0"/>
+                            <constraint firstItem="Pq6-0I-3eJ" firstAttribute="top" secondItem="0WC-vY-dFI" secondAttribute="top" id="abR-cg-OGH"/>
+                            <constraint firstItem="1Bg-H4-WNS" firstAttribute="top" secondItem="0WC-vY-dFI" secondAttribute="top" constant="104" id="buu-40-pKr"/>
+                            <constraint firstItem="1Bg-H4-WNS" firstAttribute="leading" secondItem="0WC-vY-dFI" secondAttribute="leading" constant="40" id="hWf-y1-Vvl"/>
+                            <constraint firstAttribute="bottom" secondItem="Pq6-0I-3eJ" secondAttribute="bottom" id="iTz-o2-rtu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0WC-vY-dFI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HjI-NO-YWE"/>
+                <constraint firstItem="0WC-vY-dFI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="avD-n3-DG9"/>
+            </constraints>
+            <size key="customSize" width="266" height="135"/>
+            <connections>
+                <outlet property="topImage" destination="Pq6-0I-3eJ" id="ZSI-NG-qRc"/>
+                <outlet property="topLabel" destination="1Bg-H4-WNS" id="Fcd-QH-Tk8"/>
+                <outlet property="topView" destination="0WC-vY-dFI" id="7nM-jW-sti"/>
+            </connections>
+            <point key="canvasLocation" x="294.20289855072468" y="181.80803571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="new" width="264.66665649414062" height="143.33332824707031"/>
+        <namedColor name="MainColor">
+            <color red="0.29941248725234304" green="0.58779698223077326" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
